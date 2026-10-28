@@ -1,0 +1,45 @@
+.section {
+  padding: 64px 16px;
+  background: #0f172a;
+  color: #fff;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.infoBlock {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #1e293b;
+  background: #1e293b;
+}
+.infoLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #94a3b8;
+}
+.infoValue {
+  color: #fff;
+}
+.infoValue a {
+  color: #fb923c;
+}
+.infoValue a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

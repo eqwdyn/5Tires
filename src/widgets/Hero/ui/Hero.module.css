@@ -1,0 +1,120 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #0f172a;
+  color: #fff;
+  padding: 120px 16px;
+  text-align: center;
+}
+
+.bgImage {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 24px;
+  border-radius: 9999px;
+  background: rgba(217, 119, 6, 0.2);
+  color: #fde68a;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid rgba(217, 119, 6, 0.3);
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.accent {
+  color: #fb923c;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #cbd5e1;
+  max-width: 640px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.ctaRow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 32px;
+  border-radius: 12px;
+  background: #f59e0b;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 10px 15px -3px rgba(245, 158, 11, 0.4);
+  transition: background 0.2s;
+}
+
+.ctaPrimary:hover {
+  background: #d97706;
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 32px;
+  border: 1px solid #475569;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.ctaSecondary:hover {
+  background: #1e293b;
+}
+
+@media (min-width: 640px) {
+  .hero {
+    padding: 140px 24px;
+  }
+  .title {
+    font-size: 72px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .ctaRow {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 84px;
+  }
+}
